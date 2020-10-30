@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main()
 {
-    printf("welcome to lundoor world");
+    printf("and hence my new journey with my ");
 }
 
