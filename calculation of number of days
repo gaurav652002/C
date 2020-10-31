@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int yd,ym,yy;
+    int cd,cm,cy;
+    int daysinmonth;
+    printf("please enter your date of birth");
+    scanf("%d,%d,%d", &yd, &ym, &yy);
+    printf("please enter the current date");
+    scanf("%d,%d,%d", &cd,&cm,&cy);
+    
+}
