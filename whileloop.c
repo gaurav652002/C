@@ -1,11 +1,13 @@
 #include <stdio.h>
-void main()
-
+int main()
 {
-    int a=0;
-        while(a!=10)
-        {   a++;
-            printf("%i \n", a);
-            
-        }
+    int a=0, upperlimit; int sum=0;
+    printf("please enter the upper limit:"); scanf("%i", &upperlimit);
+    while(a<=upperlimit)
+    {
+        sum = sum +a;
+        
+        a++;
+    }
+        printf("%i", sum);
 }
