@@ -6,7 +6,7 @@ int main()
         clrscr();
         for(j=0;j<5;j++)
         {
-            printf("\n arr[%d]= %d" ,j,arr[j]"); getch();
+            printf("\n arr[%d]= %d" ,j,arr[j]); scanf("")
         }
     }
 

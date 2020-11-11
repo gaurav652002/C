@@ -2,15 +2,15 @@
 
 int main()
 {
-        int a,b,final; int c;
+        int a,b,final; int c=1;
         printf("please enter the final no.:"); scanf("%d", &final);
         
-            for(a=1;a<=final; a++)
+            for(a=final;a>=1;a--)
             {
+               
                     for(b=1;b<=a;b++)
                     {
-                        c=b*b;
-                        printf("%d \a",c);
+                         printf("%i",b);
                     
                     }
                         printf("\n");                                
