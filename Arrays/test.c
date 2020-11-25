@@ -1,42 +1,31 @@
-#include<stdio.h>
-void reverse_array(int arr[],int a,int b)
-{
-    int tem;                        // 654321
-    while (a<b)
-    {
-        int temp;
-        temp=arr[a];
-        arr[a]=arr[b];
-        arr[b]=temp;
-        a++;
-        b--;
+#include "stdio.h"
+
+int main(){
+    int x;
+    printf("Enter number : ");scanf("%i",&x);
+
+    int limit=x*2-1;
+    int matrix[limit] [limit];
+
+    int y=x;
+    for(int i=0;i<limit;i++){
+        for(int j=0;j<limit+1;j++){
+            if(y-j>0){ matrix[i][j]=(y-j);}
+            else matrix[i][j]=j-y+2;
+
+        }
     }
 
-}
-void print_array(int arr[],int c){
-    
-    for (int i = 0; i < c; i++)
-    {
-        printf("The Array of position %d is %d\n",i,arr[i]);
+    int matrixt[limit] [limit];
+    for(int i=0;i<limit;i++){
+        for(int j=0;j<limit;j++){
+            matrixt[i][j]=matrix[j][i];
 
+            if (matrixt[i][j]>matrix[i][j]){
+                printf("%i ",matrixt[i][j]);
+            }
+            else printf("%i ",matrix[i][j]);
+        }
+        printf("\n");
     }
-}
-int main()
-{ 
-    int n;
-    scanf("%d",&n);
-    
-
-    int ar[20];
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%d",&ar[i]);
-
-    }
-    print_array(ar,n);
-    reverse_array(ar,0,n-1);
-
-    print_array(ar,n);
-
-    
 }
