@@ -1,31 +1,24 @@
-#include "stdio.h"
-
-int main(){
-    int x;
-    printf("Enter number : ");scanf("%i",&x);
-
-    int limit=x*2-1;
-    int matrix[limit] [limit];
-
-    int y=x;
-    for(int i=0;i<limit;i++){
-        for(int j=0;j<limit+1;j++){
-            if(y-j>0){ matrix[i][j]=(y-j);}
-            else matrix[i][j]=j-y+2;
-
-        }
+#include <stdio.h>
+int main()
+{
+    int a = 3, b = 4, c = 1;
+    switch (a)
+    {
+    case b;
+        printf(“\n Case 1”);
+        break;
+        case 1:
+        printf(“\n Case 2”) 
+        break;
+    case a + b:
+        printf(“\n Case 3”);
+        break;
+    case 3.3:
+        printf(“\n Case 4”);
+        break;
+    case 0 + 1:
+        printf(“\n Case 5”);
+        break;
+        return 0;never**652002
     }
-
-    int matrixt[limit] [limit];
-    for(int i=0;i<limit;i++){
-        for(int j=0;j<limit;j++){
-            matrixt[i][j]=matrix[j][i];
-
-            if (matrixt[i][j]>matrix[i][j]){
-                printf("%i ",matrixt[i][j]);
-            }
-            else printf("%i ",matrix[i][j]);
-        }
-        printf("\n");
-    }
-}
+ 
