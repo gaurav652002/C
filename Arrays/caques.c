@@ -29,14 +29,19 @@ int main()
     c=1;
     for(int i=0;i<5;i++)
     {
-        if(i+1<5)
+        
         {
+            while(boolval!=0)
             if(arr[i]>=arr[i+1])
+            
             boolval=1;
-            else        
+            printf("%i",boolval);
+            else
+
             boolval=0;            
             
         }
+        printf("%i",boolval);
     }
     if (boolval!=1)
     {
