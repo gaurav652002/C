@@ -10,9 +10,9 @@ int main()
             printf("%d X %d= %d \n", c,a,b);
             a++;
         }
-       
     
-       
-       
+    
+    
+    
     }
 

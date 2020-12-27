@@ -1,30 +1,16 @@
-nt main()
-{
+#include <stdio.h>
+ int main()
+ {
+     char arr[]={0};
+     int n;
+     printf("please enter the size of string arr:"); scanf("%i", &n);
+     for (int i=0; i<n; i++)
+     {
+         scanf("%s", &arr[i]);
+     }
+     for (int i=0; i<n; i++)
+     {
+         printf("%s", arr[i]);
+     }
 
-    int arr[5];
-    int c=1;
-    int boolval=1;
-    lable:
-    printf("please enter the marks of the students in descending order\n");
-    for(int i=0;i<5;i++)
-    {
-        printf("please enter the marks of student %i:",c); scanf("%i", &arr[i]);
-        c++;
-    }
-    c=1;
-    int i=0;
-    while(i!=5 && i+1<5 && boolval!=0)
-    {
-        if(arr[i]>=arr[i+1])
-        boolval=1;
-        else
-        boolval=0;
-        i++;
-    }
-    printf("%i\n", boolval);
-    
-    if (boolval!=1)
-    {
-        printf("please renter the array in the mentioned order!\n");
-        goto lable;
-    }
+ }
